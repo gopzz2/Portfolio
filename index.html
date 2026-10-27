@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gopika S | Full Stack Web Developer</title>
+<meta name="description" content="Portfolio of Gopika S, Software Engineer and Full Stack Web Developer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">Gopika<span>.</span></a>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="themeBtn" aria-label="Toggle theme">🌙</button>
+    <button id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm</p>
+    <h1>Gopika S</h1>
+    <h2><span id="typed"></span><span class="cursor">|</span></h2>
+    <p class="lead">Final-year Computer Science student who builds full-stack web apps with React, Node.js and MongoDB, and adds AI features using LLM APIs.</p>
+    <div class="btns">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="files/Gopika_S_Resume.docx" download class="btn ghost">Download Resume</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="ring"><img src="images/gopika.jpg" alt="Gopika S"></div>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <h2 class="title">About Me</h2>
+  <div class="about-grid">
+    <p>I am a final-year B.E. Computer Science and Engineering student with two internships in web application development. I enjoy designing, coding, testing and debugging REST APIs, JWT authentication and LLM-powered features using the Groq and Gemini APIs.</p>
+    <p>I presented AI research at a national conference and I am eager to contribute to an agile team and grow as a Software Engineer.</p>
+  </div>
+  <div class="stats">
+    <div><b data-count="2">0</b><span>Internships</span></div>
+    <div><b data-count="2">0</b><span>Major Projects</span></div>
+    <div><b data-count="1">0</b><span>National Paper</span></div>
+    <div><b data-count="8.21" data-dec="2">0</b><span>CGPA</span></div>
+  </div>
+</section>
+
+<section id="skills" class="section reveal">
+  <h2 class="title">Technical Skills</h2>
+  <div class="cards">
+    <div class="card"><h3>🌐 Web</h3><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span></div></div>
+    <div class="card"><h3>⚙️ Backend</h3><div class="tags"><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>JWT Auth</span></div></div>
+    <div class="card"><h3>🗄️ Databases</h3><div class="tags"><span>MongoDB</span><span>MySQL</span></div></div>
+    <div class="card"><h3>🤖 AI / LLM</h3><div class="tags"><span>Groq (LLaMA 3.3 70B)</span><span>Google Gemini</span><span>Prompt Engineering</span></div></div>
+    <div class="card"><h3>💻 Languages</h3><div class="tags"><span>Python</span><span>JavaScript</span></div></div>
+    <div class="card"><h3>🛠️ Tools</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span><span>Power BI</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="section reveal">
+  <h2 class="title">Projects</h2>
+  <div class="filters">
+    <button class="filter active" data-f="all">All</button>
+    <button class="filter" data-f="ai">AI</button>
+    <button class="filter" data-f="fullstack">Full Stack</button>
+  </div>
+  <div class="cards two">
+    <article class="card project" data-cat="ai fullstack">
+      <h3>DevConnect-AI</h3>
+      <p class="sub">Developer Portfolio &amp; Profile Platform</p>
+      <ul>
+        <li>Full-stack platform where developers manage profile, skills, education, experience and projects, with per-user data ownership.</li>
+        <li>Secure JWT authentication with bcrypt hashing, change-password flow and a shareable public portfolio page.</li>
+        <li>Integrated GitHub REST API and LeetCode stats, plus an AI assistant and AI resume improvement using Gemini.</li>
+      </ul>
+      <div class="tags"><span>React (Vite)</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Gemini API</span></div>
+    </article>
+    <article class="card project" data-cat="ai">
+      <h3>MediGuard AI</h3>
+      <p class="sub">Medical Misinformation Detection Platform</p>
+      <ul>
+        <li>Medical fact checker, WhatsApp fake-health-forward detector, symptom analyser, drug interaction checker and medicine scanner.</li>
+        <li>Structured LLM prompts and Express APIs returning verdicts with confidence score, risk level and corrections; voice input, multi-language responses and email reports.</li>
+        <li>Presented the approach as a paper at the TECHSYNERGY 2026 national conference.</li>
+      </ul>
+      <div class="tags"><span>React (Vite)</span><span>Node.js</span><span>Express</span><span>Groq API</span><span>Nodemailer</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section reveal">
+  <h2 class="title">Internship Experience</h2>
+  <div class="timeline">
+    <div class="item">
+      <h3>Full Stack Developer Intern</h3>
+      <p class="sub">Anapty CodeEmy Technologies Pvt. Ltd., Coimbatore · 1 month</p>
+      <ul>
+        <li>Developed and maintained full-stack modules using React.js, Node.js and MySQL/MongoDB under senior developer mentorship.</li>
+        <li>Built and consumed REST APIs to connect frontend components with backend services.</li>
+        <li>Took part in code reviews and debugging sessions that improved performance and reduced defects.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Frontend Developer Intern</h3>
+      <p class="sub">JRM Infotech · 2024</p>
+      <ul>
+        <li>Built responsive, cross-browser interfaces with HTML, CSS, JavaScript and React.js from design specifications.</li>
+        <li>Converted UI/UX mockups into functional web pages and worked in a small team to fix bugs and add features.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section reveal">
+  <h2 class="title">Education &amp; Certifications</h2>
+  <div class="cards two">
+    <div class="card">
+      <h3>🎓 Education</h3>
+      <p><b>B.E., Computer Science and Engineering</b><br>P.S.V. College of Engineering and Technology, Krishnagiri<br><span class="sub">2023 – 2027 · CGPA 8.21 / 10</span></p>
+      <p><b>Higher Secondary Certificate (HSC)</b><br>Government Higher Secondary School, Jayapuram<br><span class="sub">2021 – 2023 · 85%</span></p>
+    </div>
+    <div class="card">
+      <h3>📜 Certifications &amp; Training</h3>
+      <ul>
+        <li>Full Stack Web Development Course (3 months), Anapty CodeEmy · Nov 2025 – Feb 2026</li>
+        <li>Data Analytics MasterClass, NoviTech R&amp;D · Dec 2024 – Feb 2025</li>
+        <li>Data Analytics Training (100 hours), ICT Academy / Infosys</li>
+        <li>National Conference Paper, TECHSYNERGY 2026: "AI-Powered Medical Misinformation Detection Using LLM with RAG" · Apr 2026</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tags soft"><span>Problem Solving</span><span>Team Collaboration</span><span>Adaptability</span><span>Quick Learning</span><span>Time Management</span></div>
+</section>
+
+<section id="contact" class="section reveal">
+  <h2 class="title">Contact Me</h2>
+  <div class="contact">
+    <div class="info">
+      <p>📍 Krishnagiri, Tamil Nadu, India</p>
+      <p>📞 <a href="tel:+919342788737">+91 93427 88737</a></p>
+      <p>✉️ <a href="mailto:gopikasankar05@gmail.com">gopikasankar05@gmail.com</a></p>
+    </div>
+    <form id="form">
+      <input id="name" placeholder="Your name" required>
+      <input id="email" type="email" placeholder="Your email" required>
+      <textarea id="msg" rows="4" placeholder="Your message" required></textarea>
+      <button class="btn primary" type="submit">Send Message</button>
+      <p id="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Gopika S. All rights reserved.</footer>
+<button id="topBtn" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
